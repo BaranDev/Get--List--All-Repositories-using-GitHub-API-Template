@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h1 style="margin-bottom: 20px; text-align: center;">GitHub Repositories Viewer</h1>
+    <form method="post" style="margin-bottom: 20px; text-align: center;">
+        <label for="username" style="margin-right: 10px;">GitHub Username or Organization:</label>
+        <input type="text" id="username" name="username" style="margin-right: 10px;">
+        <input type="submit" value="Get Repositories" style="background-color: #2ea44f; color: white; border: none; padding: 5px 15px; border-radius: 5px; cursor: pointer;">
+        <input type="button" value="Reset Table" onclick="resetTable()" style="background-color: #2ea44f; color: white; border: none; padding: 5px 15px; margin-left: 10px; border-radius: 5px; cursor: pointer;">
+    <div class="scrollable-table">
+    {% if repos %}
+        <div>
+            <h2 id="repo-title">Repositories for {{ username }}:</h2>
+            <table id="repo-table" style="margin: auto; border-collapse: collapse; width: 100%;" border="1">
+                <tr>
+                    <th style="padding: 8px; text-align: left;">Repository's Name</th>
+                    <th style="padding: 8px; text-align: left;">Repository's Description</th>
+                    <th style="padding: 8px; text-align: left;">Used Language</th>
+                    <th style="padding: 8px; text-align: left;">Last Updated</th>
+                </tr>
+            {% for repo in repos %}
+                <tr>
+                    <td style="padding: 8px; max-width: 200px; word-wrap: break-word;">{{ repo.name }}</td>
+                    <td style="padding: 8px; max-width: 300px; word-wrap: break-word;">{{ repo.description }}</td>
+                    <td style="padding: 8px;">{{ repo.language }}</td>
+                    <td style="padding: 8px;">{{ repo.updated_at }}</td>
+                </tr>
+            {% endfor %}
+            </table>
+        </div>
+    {% elif error %}
+        <script>alert("No repositories are found for {{ request.form.username }}");</script>
+        <p>{{ error }}</p>
+    {% endif %}
+    </div>
+     <script>
+        function resetTable() {
+            // Clear the content of the table
+            document.getElementById('repo-table').innerHTML = '';
+            document.getElementById('repo-title').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
