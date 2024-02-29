@@ -32,3 +32,11 @@
 - It fetches the repositories of a GitHub user using the GitHub API.
 - The `fetch_repositories` function sends a request to the GitHub API with the provided username and API token.
 - The fetched repository data is then passed to the HTML template for rendering.
+
+![GitHub language count](https://img.shields.io/github/languages/count/barandev/List-Repositories-using-GitHub-API-Template)
+![GitHub repo size](https://img.shields.io/github/repo-size/barandev/List-Repositories-using-GitHub-API-Template)
+[![License](https://img.shields.io/github/license/barandev/Tetris-Game-Template)](https://github.com/barandev/Tetris-Game-Template/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/barandev/List-Repositories-using-GitHub-API-Template)](https://github.com/barandev/List-Repositories-using-GitHub-API-Template/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/barandev/List-Repositories-using-GitHub-API-Template)](https://github.com/barandev/List-Repositories-using-GitHub-API-Template/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/barandev/List-Repositories-using-GitHub-API-Template)](https://github.com/barandev/List-Repositories-using-GitHub-API-Template/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/barandev/List-Repositories-using-GitHub-API-Template)](https://github.com/barandev/List-Repositories-using-GitHub-API-Template/network)
