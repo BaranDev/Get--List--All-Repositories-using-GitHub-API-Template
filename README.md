@@ -35,7 +35,7 @@
 
 ![GitHub language count](https://img.shields.io/github/languages/count/barandev/List-Repositories-using-GitHub-API-Template)
 ![GitHub repo size](https://img.shields.io/github/repo-size/barandev/List-Repositories-using-GitHub-API-Template)
-[![License](https://img.shields.io/github/license/barandev/Tetris-Game-Template)](https://github.com/barandev/Tetris-Game-Template/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/barandev/List-Repositories-using-GitHub-API-Template)](https://github.com/barandev/List-Repositories-using-GitHub-API-Template/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/barandev/List-Repositories-using-GitHub-API-Template)](https://github.com/barandev/List-Repositories-using-GitHub-API-Template/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/barandev/List-Repositories-using-GitHub-API-Template)](https://github.com/barandev/List-Repositories-using-GitHub-API-Template/pulls)
 [![GitHub stars](https://img.shields.io/github/stars/barandev/List-Repositories-using-GitHub-API-Template)](https://github.com/barandev/List-Repositories-using-GitHub-API-Template/stargazers)
